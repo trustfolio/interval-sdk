@@ -661,7 +661,7 @@ const INPUT_SCHEMA = {
         .boolean()
         .nullable()
         .default(false)
-        .transform(val => !!val),
+        .transform((val: any) => !!val),
       disabled: z.optional(z.boolean().default(false)),
     }),
     state: z.null(),
@@ -675,7 +675,7 @@ const INPUT_SCHEMA = {
       disabled: z.optional(z.boolean().default(false)),
     }),
     state: z.null(),
-    returns: z.string(),
+    returns: z.object({ html: z.string(), json: z.any() }),
   },
   INPUT_DATE: {
     props: z.object({
@@ -837,7 +837,7 @@ const INPUT_SCHEMA = {
         .array(labelValue)
         .nullable()
         .default([] as z.infer<typeof labelValue>[])
-        .transform(val => val ?? []),
+        .transform((val: any) => val ?? []),
       minSelections: z.optional(z.number().int().min(0)),
       maxSelections: z.optional(z.number().positive().int()),
       disabled: z.optional(z.boolean().default(false)),
