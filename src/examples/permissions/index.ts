@@ -1,4 +1,4 @@
-import { IntervalActionDefinition } from '@interval/sdk/src/types'
+import { IntervalActionDefinition } from '@trustfolio/interval-sdk/src/types'
 import Interval, { Layout, Page, io } from '../..'
 import { IntervalRouteDefinitions } from '../../types'
 import env from '../../env'

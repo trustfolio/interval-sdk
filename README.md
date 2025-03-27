@@ -4,7 +4,7 @@
 
 # Interval Node.js SDK
 
-[![npm version](https://img.shields.io/npm/v/@interval/sdk?style=flat)](https://www.npmjs.com/package/@interval/sdk) [![Documentation](https://img.shields.io/badge/documentation-informational)](https://interval.com/docs) [![Twitter](https://img.shields.io/twitter/follow/useinterval.svg?color=%2338A1F3&label=twitter&style=flat)](https://twitter.com/useinterval) [![Discord](https://img.shields.io/badge/discord-join-blueviolet)](https://interval.com/discord)
+[![npm version](https://img.shields.io/npm/v/@trustfolio/interval-sdk?style=flat)](https://www.npmjs.com/package/@trustfolio/interval-sdk) [![Documentation](https://img.shields.io/badge/documentation-informational)](https://interval.com/docs) [![Twitter](https://img.shields.io/twitter/follow/useinterval.svg?color=%2338A1F3&label=twitter&style=flat)](https://twitter.com/useinterval) [![Discord](https://img.shields.io/badge/discord-join-blueviolet)](https://interval.com/discord)
 
 [Interval](https://interval.com) lets you quickly build internal web apps (think: customer support tools, admin panels, etc.) just by writing backend Node.js code.
 
@@ -23,7 +23,7 @@ With Interval, **all of the code for generating your web UIs lives within your a
 Here's a simple app with a single "Hello, world" action:
 
 ```ts
-import Interval from '@interval/sdk'
+import Interval from '@trustfolio/interval-sdk'
 
 const interval = new Interval({
   apiKey: '<YOUR API KEY>',

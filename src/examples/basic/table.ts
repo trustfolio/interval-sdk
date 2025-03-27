@@ -1,4 +1,4 @@
-import { IntervalActionDefinition } from '@interval/sdk/src/types'
+import { IntervalActionDefinition } from '@trustfolio/interval-sdk/src/types'
 import { IntervalActionHandler, Action, Page, Layout, io } from '../..'
 import { faker } from '@faker-js/faker'
 import fakeUsers from '../utils/fakeUsers'

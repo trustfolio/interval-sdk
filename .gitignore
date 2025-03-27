@@ -3,4 +3,5 @@ node_modules
 *.tgz
 pm2.config.js
 .env
+dist
 */.interval.config.json

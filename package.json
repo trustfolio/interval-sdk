@@ -1,6 +1,6 @@
 {
   "name": "@trustfolio/interval-sdk",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Fork of Interval SDK",
   "homepage": "https://interval.com",
   "repository": {
@@ -52,5 +52,8 @@
   "resolutions": {
     "ts-node": "^10.9.1"
   },
-  "packageManager": "yarn@1.22.19+sha1.4ba7fc5c6e704fce2066ecbfb0b0d8976fe62447"
+  "packageManager": "yarn@1.22.19+sha1.4ba7fc5c6e704fce2066ecbfb0b0d8976fe62447",
+  "publishConfig": {
+    "@edgarroussille:registry": "https://npm.pkg.github.com"
+  }
 }

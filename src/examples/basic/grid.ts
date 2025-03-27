@@ -1,4 +1,4 @@
-import { Action } from '@interval/sdk/src/experimental'
+import { Action } from '@trustfolio/interval-sdk/src/experimental'
 import { IntervalActionHandler, io } from '../..'
 import { faker } from '@faker-js/faker'
 import { sleep } from '../utils/helpers'
