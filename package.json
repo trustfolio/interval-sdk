@@ -3,10 +3,7 @@
   "version": "1.0.1",
   "description": "Fork of Interval SDK",
   "homepage": "https://interval.com",
-  "repository": {
-    "type": "git",
-    "url": "github:trustfolio/interval-sdk"
-  },
+  "repository": "https://github.com/trustfolio/interval-sdk.git",
   "bugs": "https://github.com/trustfolio/interval-sdk/issues",
   "keywords": [
     "internal tool",
