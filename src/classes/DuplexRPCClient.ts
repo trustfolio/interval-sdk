@@ -13,8 +13,8 @@ function generateId() {
 
 export interface MethodDef {
   [key: string]: {
-    inputs: z.ZodFirstPartySchemaTypes | z.ZodDiscriminatedUnion<any, any, any>
-    returns: z.ZodFirstPartySchemaTypes | z.ZodDiscriminatedUnion<any, any, any>
+    inputs: z.ZodFirstPartySchemaTypes | z.ZodDiscriminatedUnion<string, any>
+    returns: z.ZodFirstPartySchemaTypes | z.ZodDiscriminatedUnion<string, any>
   }
 }
 

@@ -8,7 +8,12 @@
     "url": "github:interval/interval-node"
   },
   "bugs": "https://github.com/interval/interval-node/issues",
-  "keywords": ["internal tool", "app", "ui", "ui builder"],
+  "keywords": [
+    "internal tool",
+    "app",
+    "ui",
+    "ui builder"
+  ],
   "license": "MIT",
   "engines": {
     "node": ">=12.17.0"
@@ -18,7 +23,7 @@
   "scripts": {
     "tar": "yarn pack",
     "check": "tsc --noEmit",
-    "build": "tsc",
+    "build": "NODE_OPTIONS=--max-old-space-size=8192 tsc",
     "demo:basic": "node ./dist/examples/basic/index.js",
     "dev": "nodemon --watch src -e ts src/examples/${1:-basic}/index.ts"
   },
@@ -46,5 +51,6 @@
   },
   "resolutions": {
     "ts-node": "^10.9.1"
-  }
+  },
+  "packageManager": "yarn@1.22.19+sha1.4ba7fc5c6e704fce2066ecbfb0b0d8976fe62447"
 }

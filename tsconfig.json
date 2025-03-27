@@ -3,14 +3,20 @@
     "outDir": "./dist",
     "lib": ["dom", "dom.iterable", "esnext"],
     "skipLibCheck": true,
-    "module": "commonjs",
-    "target": "ES2019",
+    "module": "ES2020",
+    "target": "esnext",
     "declaration": true,
     "esModuleInterop": true,
     "strict": true,
     "strictNullChecks": true,
-    "rootDir": "./src"
+    "rootDir": "./",
+    "noEmit": true,
+    "noImplicitAny": false,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve"
   },
   "include": ["./src", "./package.json", "./typings.d.ts"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "./src/examples"]
 }

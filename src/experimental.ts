@@ -1,11 +1,7 @@
-import { z } from 'zod'
-import fetch from 'cross-fetch'
 import type { IncomingMessage, ServerResponse } from 'http'
-import Interval, { io, ctx, InternalConfig, IntervalError } from '.'
+import Interval, { io, ctx, IntervalError } from '.'
 import IntervalClient from './classes/IntervalClient'
 import Page from './classes/Page'
-import * as pkg from '../package.json'
-import { DECLARE_HOST } from './internalRpcSchema'
 import {
   getRequestBody,
   HttpRequestBody,

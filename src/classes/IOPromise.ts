@@ -241,6 +241,7 @@ export class InputIOPromise<
     MethodName,
     Props,
     ComponentOutput,
+    // @ts-ignore
     typeof this,
     Choice
   > {
@@ -1239,6 +1240,7 @@ export class IOGroupPromise<
 
   withChoices<Choice extends string>(
     choices: ChoiceButtonConfigOrShorthand<Choice>[]
+    // @ts-ignore
   ): WithChoicesIOGroupPromise<IOPromises, ReturnValues, typeof this, Choice> {
     return new WithChoicesIOGroupPromise<
       IOPromises,

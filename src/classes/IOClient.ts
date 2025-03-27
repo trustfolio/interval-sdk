@@ -222,6 +222,7 @@ export class IOClient {
                 result.values.map(async (v, index) => {
                   const component = components[index]
                   if (component.validator) {
+                    // @ts-ignore
                     const resp = await component.handleValidation(v)
                     if (resp !== undefined) {
                       return false
