@@ -5,8 +5,12 @@ on:
     types: [created]
 
 jobs:
-  build:
+  build_and_publish:
+    name: Build and Publish Package
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
