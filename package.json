@@ -22,7 +22,8 @@
     "check": "tsc --noEmit",
     "build": "NODE_OPTIONS=--max-old-space-size=8192 tsc",
     "demo:basic": "node ./dist/examples/basic/index.js",
-    "dev": "nodemon --watch src -e ts src/examples/${1:-basic}/index.ts"
+    "dev": "nodemon --watch src -e ts src/examples/${1:-basic}/index.ts",
+    "deploy": "yarn build && npm publish --access public"
   },
   "dependencies": {
     "@brillout/import": "^0.2.2",
@@ -49,8 +50,5 @@
   "resolutions": {
     "ts-node": "^10.9.1"
   },
-  "packageManager": "yarn@1.22.19+sha1.4ba7fc5c6e704fce2066ecbfb0b0d8976fe62447",
-  "publishConfig": {
-    "@trustfolio:registry": "https://npm.pkg.github.com"
-  }
+  "packageManager": "yarn@1.22.19+sha1.4ba7fc5c6e704fce2066ecbfb0b0d8976fe62447"
 }
