@@ -1,6 +1,6 @@
 {
   "name": "@trustfolio/interval-sdk",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Fork of Interval SDK",
   "homepage": "https://interval.com",
   "repository": "https://github.com/trustfolio/interval-sdk.git",
