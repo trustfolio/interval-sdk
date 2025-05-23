@@ -675,7 +675,11 @@ const INPUT_SCHEMA = {
       disabled: z.optional(z.boolean().default(false)),
     }),
     state: z.null(),
-    returns: z.object({ html: z.string(), json: z.any() }),
+    returns: z.object({
+      html: z.string(),
+      json: z.any(),
+      mentions: z.array(z.any()).optional(),
+    }),
   },
   INPUT_DATE: {
     props: z.object({
